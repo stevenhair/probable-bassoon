@@ -1,0 +1,47 @@
+{
+  "name": "probable-bassoon",
+  "version": "1.0.0",
+  "description": "Repro of planttheidea/moize#119",
+  "main": "src/index.ts",
+  "dependencies": {
+    "moize": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "jest": "^25.4.0",
+    "ts-jest": "^25.4.0",
+    "ts-node": "^8.9.0",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:in-band": "jest --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenhair/probable-bassoon.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/stevenhair/probable-bassoon/issues"
+  },
+  "homepage": "https://github.com/stevenhair/probable-bassoon#readme",
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "modulePaths": [
+      "<rootDir>"
+    ],
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
